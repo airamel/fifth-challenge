@@ -1,0 +1,139 @@
+
+
+.card {
+    align-items: center;
+    margin: 50px;
+}
+
+.card-rodney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color:#4E5150;
+    text-align: center;
+}
+.container-img {
+    display: flex;
+    width: 217px;
+    height: 226px;
+}
+
+.nationality {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+
+.data-ig {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.square {
+    width: 100px;
+    height: 67px;
+    background: #E5E5E5;
+    border-radius: 12px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color:#4E5150;
+}
+
+.p-data-ig {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+/*Section of gallery with grid*/
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   padding: 20px;
+   grid-gap: 10px;
+   align-items: center;
+}
+
+.photo-item {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform .5s;
+}
+
+.photo:nth-child(2) {
+    grid-column-start: span 2;
+}
+
+.photo:nth-child(3) {
+    grid-column-start: span 2;
+}
+
+.photo:nth-child(4) {
+    grid-row-start: span 2;
+}
+
+.photo-item:hover {
+    transform: scale(1.1);
+    
+}
+
+@media screen and (max-width:900px){
+    .container-img {
+        width: 147px;
+        height: 156px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .container-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .nationality {
+        font-size: 13px;
+    }
+
+    .square {
+        width: 80px;
+        height: 57px;
+    }
+
+    .number {
+        font-size: 15px;
+    }
+
+    .p-data-ig {
+        font-size: 12px;
+    }
+
+}
